@@ -36,6 +36,17 @@ Tier 2 is an enhancement. Layout, contrast and identity must survive with tier 1
   layer**; text contrast **4.5:1** body / **3:1** large. Blur/saturation are taste — the defaults
   here are calibrated to Apple's reference images, not quoted specs (see `references/sources.md`).
 
+## Composition
+
+Glass doesn't fix layout. Keep the negative space intentional:
+
+- **Two-column editorial grid.** Give a wide glass panel a main content column and a narrow metadata rail (spec list, stats, actions). A single left-aligned column in a wide panel reads as empty.
+- **Divide large panels with hairlines.** A 1px top rule separates the header from the action row without adding another card.
+- **Share one baseline for floating chrome.** Dock, mini player and a lens/toy should sit on a common bottom rhythm and align to the page grid where they can.
+- **Index the section headers.** `01 / Materials`, `02 / Components` plus a short right-aligned description create rhythm and keep the eye moving.
+- **Vary the spacing.** Use a small scale (16 / 24 / 40 / 48) and give the hero one large breathing area; uniform gaps make everything equally quiet.
+- **Cap the glass.** 3–8 surfaces. When every card is glass, the negative space disappears and the material stops meaning anything.
+
 ## Step 1 — Choose surfaces
 
 Inventory the UI; classify each region as **chrome** (glass candidate) or **content** (leave alone).
