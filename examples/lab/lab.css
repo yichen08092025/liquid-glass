@@ -936,8 +936,47 @@ input[type="range"]::-moz-range-thumb {
   color: var(--ink-faint);
 }
 
+/* ---------- 9.5 Scroll cue ---------- */
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 38px auto 0;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+.scroll-cue__label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+.scroll-cue__line {
+  position: relative;
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, currentColor, transparent);
+  opacity: 0.6;
+}
+.scroll-cue__line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translate(-50%, 50%);
+  opacity: 0.9;
+}
+html[data-theme="dark"] .scroll-cue { color: rgba(241, 247, 243, 0.72); }
+
 /* ---------- 10. Materials ---------- */
-.materials { margin-top: clamp(60px, 30vh, 330px); }
+.materials { margin-top: clamp(40px, 20vh, 200px); }
 
 .section-head {
   display: flex;
@@ -1365,6 +1404,7 @@ html[data-theme="dark"] .lens__inner { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5)
 @media (max-width: 1080px) {
   .player { display: none; }
   .materials { margin-top: 64px; }
+  .scroll-cue { display: none; }
   .stage { grid-template-columns: minmax(0, 1fr); }
   .hero { min-height: 0; }
   .console { max-width: 620px; margin-inline: auto; }
