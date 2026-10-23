@@ -91,7 +91,34 @@
               查看制作步骤
             </button>
           </div>
+        </div>
 
+        <aside class="hero__specs" aria-label="技术参数">
+          <span class="specs__cap">Specimen / 材质参数</span>
+          <div class="spec">
+            <span class="spec__no">01</span>
+            <span class="spec__body">
+              <span class="spec__k">折射</span>
+              <span class="spec__v">SVG 位移贴图</span>
+            </span>
+          </div>
+          <div class="spec">
+            <span class="spec__no">02</span>
+            <span class="spec__body">
+              <span class="spec__k">高光</span>
+              <span class="spec__v">CSS 遮罩描边</span>
+            </span>
+          </div>
+          <div class="spec">
+            <span class="spec__no">03</span>
+            <span class="spec__body">
+              <span class="spec__k">降级</span>
+              <span class="spec__v">自动检测引擎</span>
+            </span>
+          </div>
+        </aside>
+
+        <div class="hero__bottom">
           <div class="hero__quick" aria-label="快捷记录">
             <span class="quick">
               <svg viewBox="0 0 24 24" class="i"><path d="M5 4.5h14v15H5z"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4"/></svg>
@@ -105,23 +132,6 @@
               <svg viewBox="0 0 24 24" class="i"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.5l3 1.8"/></svg>
               专注 <strong>25:00</strong>
             </span>
-          </div>
-        </div>
-
-        <div class="hero__bottom">
-          <div class="hero__facts">
-            <div class="fact">
-              <span class="fact__k">折射</span>
-              <span class="fact__v">SVG 位移贴图</span>
-            </div>
-            <div class="fact">
-              <span class="fact__k">高光</span>
-              <span class="fact__v">CSS 遮罩描边</span>
-            </div>
-            <div class="fact">
-              <span class="fact__k">降级</span>
-              <span class="fact__v">自动检测引擎</span>
-            </div>
           </div>
           <p class="hero__hint">
             <span class="pulse" aria-hidden="true"></span>
@@ -201,7 +211,7 @@
     <!-- 三种材质 -->
     <section class="materials" id="materials" aria-labelledby="matTitle">
       <div class="section-head">
-        <h2 id="matTitle">三种材质</h2>
+        <div class="section-head__lead"><span class="section-head__no">01</span><h2 id="matTitle">三种材质</h2></div>
         <p>Apple 的 Liquid Glass 只有 regular 与 clear 两种变体；着色（tinted）在材质里混入品牌色。</p>
       </div>
       <div class="material-grid">
@@ -237,7 +247,7 @@
     <!-- 组件示例 -->
     <section class="components" id="components" aria-labelledby="compTitle">
       <div class="section-head">
-        <h2 id="compTitle">组件</h2>
+        <div class="section-head__lead"><span class="section-head__no">02</span><h2 id="compTitle">组件</h2></div>
         <p>导航、分段控件、开关、滑块、浮层菜单与底部 Dock 都使用同一套材质令牌。</p>
       </div>
 
